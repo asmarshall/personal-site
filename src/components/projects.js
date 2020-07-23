@@ -28,9 +28,9 @@ export default ({ children }) => (
         link="http://www.goodneighbors.club"
       />
       <Project
-        name="Awaken"
-        summary="Raspberry Pi integrated web app serving as a daily personal dashboard"
-        link="https://github.com/asmarshall/awaken"
+        name="Slack-Tack-Toe"
+        summary="Slack slash command to play the game of tic-tac-toe with fellow team members in a public channel"
+        link="https://github.com/asmarshall/ttt-slash-command"
       />
       <Project
         name="The Sunflower Queen"
