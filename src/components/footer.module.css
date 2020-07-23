@@ -1,0 +1,46 @@
+.container {
+  margin-top: 15em;
+  display: flex;
+  justify-content: center;
+  align-items: top;
+}
+
+.socials {
+  display: flex;
+  letter-spacing: 1px;
+  margin: auto;
+}
+
+.socials a {
+  padding-left: 5px;
+  font-size: 1.17em;
+  line-height: 40px;
+}
+
+.socials-right {
+  padding-left: 20px;
+}
+
+.get-in-touch {
+  width: 400px;
+  margin: auto;
+  font-size: 2em;
+  letter-spacing: 2px;
+}
+
+hr {
+  width: 100%;
+  border: 10px solid var(--textNormal);
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    flex-direction: column;
+  }
+  .get-in-touch {
+    width: 100%;
+    font-size: 19px;
+    margin-bottom: 2em;
+    text-align: center;
+  }
+}

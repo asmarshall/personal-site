@@ -1,0 +1,48 @@
+.container {
+  padding-top: 15em;
+  display: flex;
+  max-width: 700px;
+  margin: auto;
+  align-items: top;
+  justify-content: center;
+}
+
+.project {
+  max-width: 300px;
+  padding-top: 10px;
+  padding-bottom: 2.5em;
+}
+
+.project a {
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.project h3 {
+  margin: 0;
+}
+
+.title {
+  padding-right: 2rem;
+}
+
+.title h1 {
+  transform: rotate(-90deg);
+  font-size: 1.7em;
+  margin-top: 3.2em;
+  letter-spacing: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+  .title {
+    padding-right: 3rem;
+    padding-left: 0;
+  }
+  .title h1 {
+    transform: rotate(0deg);
+    margin-top: 0;
+  }
+  .container {
+    flex-direction: column;
+  }
+}

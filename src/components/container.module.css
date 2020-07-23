@@ -1,0 +1,16 @@
+.container {
+  margin: 3rem auto;
+  max-width: 900px;
+  padding: 1rem;
+  padding-left: 7rem;
+  padding-right: 7rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    margin: 1rem auto;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    max-width: 500px;
+  }
+}

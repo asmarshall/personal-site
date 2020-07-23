@@ -1,0 +1,169 @@
+button {
+  background: none !important;
+  padding: 0 !important;
+  cursor: pointer;
+  perspective-origin: 0 0;
+  outline: none;
+  border: none;
+  font-size: 15px;
+  font-family: 'Montserrat', sans-serif;
+  -moz-appearance: none;
+  color: var(--textNormal);
+}
+
+@supports (-moz-appearance:none) { /* Mozilla-only */
+  button::-moz-focus-inner { /* reset any predefined properties */
+    border: none;
+    padding: 0;
+  }
+  button:focus { /* add outline to focus pseudo-class */
+    outline-style: dotted;
+    outline-width: 1px;
+  }
+}
+
+span {
+  display: block;
+  transform: rotate(90deg);
+  letter-spacing: 1px;
+}
+
+.active {
+  font-weight: 600;
+}
+
+.projects {
+  margin-top: 3.5rem;
+}
+
+.projects:hover {
+  color: #C8A844;
+}
+
+.about:hover {
+  color: #C8A844;
+}
+
+.listLink {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.listLink:last-child {
+  margin-right: 0;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.logo {
+  text-shadow: none;
+  background-image: none;
+}
+
+.panel {
+  position: fixed;
+  top: 5rem;
+  font-size: 15px;
+}
+
+.top-left {
+  left: 5rem;
+}
+
+.lower-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 25rem;
+  left: 4rem;
+}
+
+.lower-left svg {
+  height: 100%;
+}
+
+.lower-left span {
+  transform: rotate(-90deg);
+  margin: 0;
+  padding: 0;
+}
+
+.top-right {
+  display: flex;
+  flex-direction: column;
+  right: 4rem;
+}
+
+.line {
+  position: relative;
+  width: 2px;
+  height: 0vh;
+  background-color: var(--textNormal);
+  margin-top: 5vh;
+  -webkit-animation: increase 2s;
+  -moz-animation:    increase 2s;
+  -o-animation:      increase 2s;
+  animation:         increase 2s infinite;
+  animation-fill-mode: forwards;
+}
+
+@keyframes increase {
+  100% {
+    height: 10vh;
+  }
+}
+
+.checkbox-container {
+  margin-bottom: 10px;
+}
+
+input[type = checkbox] {
+  display: none;
+}
+
+input + label {
+  font-size: 1.2rem;
+  width: 1.7rem;
+  height: 1.7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-image: url("data:image/svg+xml;charset=UTF-8,<svg width='67' height='67' viewBox='0 0 67 67' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M33.5 0C15 0 0 15 0 33.5C0 52 15 67 33.5 67C52 67 67 52 67 33.5C67 15 52 0 33.5 0ZM51.97 39.95C49.42 48.05 42 53.5 33.5 53.5C25 53.5 17.58 48.05 15.03 39.95C14.78 39.16 15.22 38.32 16.01 38.07C16.8 37.82 17.64 38.26 17.89 39.05C20.04 45.9 26.32 50.5 33.5 50.5C40.68 50.5 46.96 45.9 49.11 39.05C49.36 38.26 50.2 37.82 50.99 38.07C51.78 38.32 52.22 39.16 51.97 39.95Z' fill='black'/></svg>");
+  background-size: 1.7rem 1.7rem;
+  transition: .1s all;
+  cursor: pointer;
+  z-index: 999 !important;
+}
+
+input + label:hover {
+  transform: scale(.95);
+}
+
+input:checked + label {
+  background-image: url("data:image/svg+xml;charset=UTF-8,<svg width='67' height='67' viewBox='0 0 67 67' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M33.5 0C15 0 0 15 0 33.5C0 52 15 67 33.5 67C52 67 67 52 67 33.5C67 15 52 0 33.5 0ZM50.99 50.43C50.84 50.48 50.69 50.5 50.54 50.5C49.9 50.5 49.31 50.09 49.11 49.45C46.96 42.6 40.68 38 33.5 38C26.32 38 20.04 42.6 17.89 49.45C17.64 50.24 16.8 50.68 16.01 50.43C15.22 50.18 14.78 49.34 15.03 48.55C17.58 40.45 25 35 33.5 35C42 35 49.42 40.45 51.97 48.55C52.22 49.34 51.78 50.18 50.99 50.43Z' fill='white'/></svg>");
+}
+
+input:checked + label:after {
+  background-image: url("data:image/svg+xml;charset=UTF-8,<svg width='67' height='67' viewBox='0 0 67 67' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M33.5 0C15 0 0 15 0 33.5C0 52 15 67 33.5 67C52 67 67 52 67 33.5C67 15 52 0 33.5 0ZM51.97 39.95C49.42 48.05 42 53.5 33.5 53.5C25 53.5 17.58 48.05 15.03 39.95C14.78 39.16 15.22 38.32 16.01 38.07C16.8 37.82 17.64 38.26 17.89 39.05C20.04 45.9 26.32 50.5 33.5 50.5C40.68 50.5 46.96 45.9 49.11 39.05C49.36 38.26 50.2 37.82 50.99 38.07C51.78 38.32 52.22 39.16 51.97 39.95Z' fill='black'/></svg>");
+}
+
+@media only screen and (max-width: 600px) {
+  .positioning {
+    top: 2rem;
+    right: 2rem;
+  }
+  .top-left {
+    left: 2rem;
+    top: 4rem;
+  }
+  .lower-left {
+    display: none;
+  }
+  .top-right{
+    display: none;
+  }
+}
