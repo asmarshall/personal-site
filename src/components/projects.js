@@ -25,7 +25,7 @@ export default ({ children }) => (
       <Project
         name="Good Neighbors Club"
         summary="Rails app created to help support local businesses and foster community during COVID-19"
-        link="http://www.goodneighbors.club"
+        link="https://github.com/asmarshall/good-neighbors-club"
       />
       <Project
         name="Slack-Tack-Toe"
